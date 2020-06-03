@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(cstringcal)
+enable_testing()
+#set(CMAKE_C_FLAGS "-Wall -Werror -Wpedantic -std=c11")
+find_package(cmocka CONFIG REQUIRED)
+message(STATUS "cmocka_FOUND=${cmocka_FOUND}")
+add_subdirectory(src)
+add_subdirectory(test)

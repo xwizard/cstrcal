@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/wizard/Documents/Projekty/cstrcal/src/state.c
+stdlib.h
+-
+state.h
+C:/Users/wizard/Documents/Projekty/cstrcal/src/state.h
+
+C:/Users/wizard/Documents/Projekty/cstrcal/src/state.h
+
