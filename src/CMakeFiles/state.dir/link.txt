@@ -1,2 +1,0 @@
-C:\TDM-GCC-64\bin\ar.exe qc libstate.a  CMakeFiles/state.dir/state.c.obj
-C:\TDM-GCC-64\bin\ranlib.exe libstate.a
