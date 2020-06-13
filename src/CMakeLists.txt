@@ -1,1 +1,1 @@
-add_library(state state.c)
+add_library(strcal strcal.c)

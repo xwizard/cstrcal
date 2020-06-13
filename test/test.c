@@ -3,7 +3,7 @@
 #include <setjmp.h>
 #include <cmocka.h>
  
-#include "state.h"
+#include "strcal.h"
  
 void test1()
 {

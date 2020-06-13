@@ -1,6 +1,6 @@
 #include <stdlib.h>
  
-#include "state.h"
+#include "strcal.h"
  
 state *state_new()
 {
