@@ -2,42 +2,18 @@
 #include <stddef.h>
 #include <setjmp.h>
 #include <cmocka.h>
- 
+
 #include "strcal.h"
- 
-void test1()
+
+static void empty_string_should_return_0(void **state)
 {
-  state *s;
- 
-  s = state_new();
-  assert_non_null(s);
-  assert_int_equal(state_get(s), 0);
-  state_free(s);
+  (void) state;
 }
- 
-void test2()
-{
-  state *s;
-  int e;
- 
-  s = state_new();
-  assert_non_null(s);
- 
-  e = state_set(s, 5);
-  assert_int_equal(e, 0);
-  assert_int_equal(state_get(s), 5);
- 
-  e = state_set(s, 42);
-  assert_int_equal(e, -1);
-  assert_int_equal(state_get(s), 5);
-}
- 
+
 int main(void)
 {
-  const UnitTest tests[] = {
-    unit_test(test1),
-    unit_test(test2),
+  const struct CMUnitTest tests[] = {
+      cmocka_unit_test(empty_string_should_return_0),
   };
- 
-  return run_tests(tests);
+  return cmocka_run_group_tests(tests, NULL, NULL);
 }
