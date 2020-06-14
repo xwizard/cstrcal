@@ -1,6 +1,13 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include "strcal.h"
 
-signed int add(char *numbers)
+signed int add(const char *numbers)
 {
-  return 0;
+  if (numbers == NULL || strlen(numbers) == 0) {
+    return 0;
+  }
+
+  return strtol(numbers, NULL, 10);
 }
